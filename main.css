@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto/Roboto-Regular.ttf');
+}
+body{
+    margin:0px;
+    padding:0px;
+    font-family:'roboto', 'Open-Sans', sans-serif;
+}
+/*LANDING PAGE*/
+header{
+    height:100vh;
+    background-image:url(images/paintblocks.jpg);
+    background-attachment:fixed;
+    background-position:-100px -100px;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    color:rgb(255, 255, 255);
+    text-shadow: gray 0 0 5px;
+}
+.navbar{
+    margin:0px;
+    list-style-type:none;
+    text-align: right;
+    padding:20px;
+}
+.navbar li{
+    display:inline;
+    padding: 0px 10px;
+}
+a{
+    text-decoration:none;
+    color:white;
+    text-shadow: grey 0 0 5px;
+}
+.header-wrapper{
+    width:100vw;
+    padding:40vh 0px 15vh 0px;
+    vertical-align: middle;
+    display:table-cell; /*enables vertical align. to learn */
+    text-align:center;
+}
+.header-title{
+    font-size:70pt;
+    letter-spacing:5px;
+}
+.header-subtitle{
+    padding:0.6em 0em;
+    font-size:30pt;
+}
+.scrolldown{
+    text-align: center;
+    -webkit-filter:invert(1); /*make png white*/
+    animation:updown 2s infinite;
+}
+/*SCROLL DOWN ARROW*/
+@keyframes updown {
+    0% {
+        transform:translate(0, 0);
+        }
+    50% {
+        transform:translate(0px, 20px);
+        }
+    100% {
+        transform:translateY(0, 0);
+        }
+}
+/*ABOUT*/
+/* .about{
+    color:gray;
+    font-family:'Roboto', 'Open-Sans', sans-serif;
+    padding:50px;
+    height:75vh;
+    background-color:grey;
+}
+.about-title{
+    text-align:center;
+    display:inline-block;
+    font-size:50pt;
+    text-transform:uppercase;
+}
+.about-bio{
+    background-color:white;
+    color:grey;
+    border-radius:3px;
+    padding:20px;
+    margin:50px;
+}
+.about-figures{
+    display:flex;
+    flex-direction:row;
+}
+.about figure{
+    margin:auto;
+    text-transform:capitalize;
+    width: 350px;
+    text-align:center;
+}
+.about figure img{
+    border-radius:3px;
+    width: 350px;
+    height:200px
+} */
+.about{
+}
+.wrapper{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-gap:40px;
+    margin:40px;
+}
+
+.about-title{
+    padding:50px;
+    text-align:right;
+    font-size:30pt;
+}
+.about-image{
+    object-fit:cover;
+    width:100%;
+    max-height:200px;
+}
+.about-bio{
+    background-color:#eee;
+    padding:20px;
+}
+.grid-reverse{
+    
+}
+/*CONTACT*/
+.contact{
+    display:flex;
+    flex-direction:row;
+    background-color: black;
+    padding:30px;
+    color:white;
+}
+.contact figure{
+    margin:auto;
+    text-align:center;
+}
+.contact figure img{
+    width:20px;
+    -webkit-filter:invert(1);/*make png white*/
+}
+footer{
+    background-color:grey;
+    text-align:center;
+    color:white;
+    padding: 10px;
+}
