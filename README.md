@@ -1,2 +1,6 @@
 # mayakelso.com
-attempt to use grid-template-areas to swap text and image on every other row
+A repository of versions of mayakelso.com
+
+future versions will include portfolio and gallery pages
+
+git test
